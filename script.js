@@ -9,7 +9,7 @@
     } else if (toxicFoodsForDogs.includes(foodInput)) {
         result.textContent = `Toxic for canine consumption. If ingested, please contact your emergency vet.`;
     } else {
-        result.textContent = `Could not be found in food list. Please try a different food.`
+        result.textContent = `Item could not be found in food list. Please try again by searching for main ingredient or spice.`
     }
 }
 
@@ -38,7 +38,7 @@ const safeFoodsForDogs = [
     "celery",
     "chestnuts",
     "chicken",
-    "chuck Steak",
+    "chuck steak",
     "cod",
     "corn",
     "cranberries",
@@ -48,7 +48,7 @@ const safeFoodsForDogs = [
     "duck",
     "egg",
     "eggs",
-    "barbanzo beans",
+    "garbanzo beans",
     "grain",
     "grains",
     "green bean",
@@ -169,7 +169,7 @@ const modFoodsForDogs = [
 
 const toxicFoodsForDogs = [
     "alcohol",
-    "allium",
+    "alliums",
     "almond",
     "almonds",
     "avocado",
