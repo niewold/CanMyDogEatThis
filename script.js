@@ -8,6 +8,8 @@
         result.textContent = `Safe in moderation for canine consumption.`;
     } else if (toxicFoodsForDogs.includes(foodInput)) {
         result.textContent = `Toxic for canine consumption. If ingested, please contact your emergency vet.`;
+    } else if (foodGroups.includes(foodInput)) {
+        result.textContent = `Some are safer than others. Please be more specific in your search.`;
     } else {
         result.textContent = `Item could not be found in food list. Please try again by searching for main ingredient or spice.`
     }
@@ -258,5 +260,24 @@ const toxicFoodsForDogs = [
     "yellow pepper",
     "yellow peppers",
     // ... add other toxic foods here
+
 ];
 
+const foodGroups = [
+    "fruit",
+    "fruits",
+    "vegetable",
+    "vegetables",
+    "dairy",
+    "fish",
+    "meat",
+    "meats",
+    "poultry",
+    "protein",
+    "proteins",
+    "grain",
+    "grains",
+    "legumes",
+    // ... add more food groups here
+
+];
